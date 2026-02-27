@@ -22,7 +22,7 @@ class File:
 class PystonClient:
 
     ENDPOINTS = ("runtimes", "execute")
-    BASE_URL = "http://piston-api.archax.dev"
+    BASE_URL = "http://piston-api.archax.dev/"
 
     """Pyston client class"""
 
@@ -32,7 +32,7 @@ class PystonClient:
         base_url: Optional[str] = None,
     ):
 
-        self.base_url = base_url or "http://piston-api.archax.dev"
+        self.base_url = base_url or "http://piston-api.archax.dev/"
         self._http_session = http_handler.HTTP(self.base_url, api_key)
         self._runtimes: Optional[list[Runtime]] = None  # Holds the runtimes cache
 
