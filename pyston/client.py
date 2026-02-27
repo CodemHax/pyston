@@ -22,7 +22,7 @@ class File:
 class PystonClient:
 
     ENDPOINTS = ("runtimes", "execute")
-    BASE_URL = "https://emkc.org/api/v2/piston/"
+    BASE_URL = "http://piston-api.archax.dev"
 
     """Pyston client class"""
 
